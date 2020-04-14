@@ -1,0 +1,35 @@
+{
+  "name": "o2sql-pg",
+  "version": "1.0.1",
+  "description": "o2sql for postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/index.js"
+  },
+  "dependencies": {
+    "o2sql": "^4.0.0",
+    "pg": "^8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qdechochen/o2sql-pg.git"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "keywords": [
+    "database",
+    "pg",
+    "postgres",
+    "postgresql",
+    "osql",
+    "o2sql"
+  ],
+  "author": "Echo Chen <qdechochen@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qdechochen/o2sql-pg/issues"
+  },
+  "homepage": "https://github.com/qdechochen/o2sql-pg#readme"
+}
