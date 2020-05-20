@@ -29,6 +29,41 @@ let list = await o2sql.select(['id', 'name']).from('user').execute();
 
 For information about O2sql, please refer to [o2sql](https://www.npmjs.com/package/o2sql).
 
+## group columns
+
+```javascript
+o2sql
+  .select([
+    'id',
+    'name',
+    {
+      table: 'dept',
+      fields: ['id', 'name'],
+      prefix: 'dept',
+      group: true,
+    },
+  ])
+  .from('user')
+  .innerJoin('dept', ['deptId', 'dept.id'])
+  .default('user')
+  .where({
+    orgId: 3,
+  })
+  .orderby(['deptName']);
+
+[
+  {
+    id: 1,
+    name: 'a',
+    dept: {
+      id: 9,
+      name: 'dept sample
+    }
+  },
+  ...
+]
+```
+
 ## transaction
 
 **O2sqlPg.transaction(queries: function, client: Client):Any**
