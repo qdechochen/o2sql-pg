@@ -1,6 +1,6 @@
 {
   "name": "o2sql-pg",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "o2sql for postgres",
   "main": "index.js",
   "scripts": {
