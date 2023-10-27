@@ -1,13 +1,13 @@
 {
   "name": "o2sql-pg",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "o2sql for postgres",
   "main": "index.js",
   "scripts": {
     "test": "node ./test/index.js"
   },
   "dependencies": {
-    "o2sql": "^4.0.9",
+    "o2sql": "^4.0.10",
     "pg": "^8.7.1"
   },
   "repository": {
